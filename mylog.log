@@ -1,383 +1,36 @@
-2024-08-29T16:50:11.675-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 6656 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T16:50:11.678-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T16:50:12.219-03:00  INFO 6656 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T16:50:12.242-03:00  INFO 6656 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.
-2024-08-29T16:50:12.530-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T16:50:12.549-03:00  INFO 6656 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T16:50:12.550-03:00  INFO 6656 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T16:50:12.615-03:00  INFO 6656 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T16:50:12.616-03:00  INFO 6656 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 932 ms
-2024-08-29T16:50:12.650-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-08-29T16:50:12.656-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:db user=SA
-2024-08-29T16:50:12.657-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-08-29T16:50:12.658-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T16:50:12.736-03:00  INFO 6656 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T16:50:12.754-03:00  INFO 6656 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T16:50:12.815-03:00  INFO 6656 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T16:50:12.834-03:00  WARN 6656 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T16:50:12.973-03:00  INFO 6656 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T16:50:13.053-03:00  INFO 6656 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T16:50:13.234-03:00  WARN 6656 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T16:50:13.472-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T16:50:13.490-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T16:50:13.499-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 1.925 seconds (process running for 61.23)
-2024-08-29T16:50:13.505-03:00  INFO 6656 --- [crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-29T16:51:36.857-03:00  INFO 6656 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T16:51:36.859-03:00  INFO 6656 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T16:51:36.861-03:00  INFO 6656 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-08-29T16:53:44.620-03:00  INFO 6656 --- [crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-29T16:53:44.632-03:00  INFO 6656 --- [crud] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T16:53:44.633-03:00  WARN 6656 --- [crud] [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-08-29T16:53:44.634-03:00  INFO 6656 --- [crud] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2024-08-29T16:53:44.635-03:00  INFO 6656 --- [crud] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2024-08-29T16:53:44.802-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 6656 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T16:53:44.803-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T16:53:45.071-03:00  INFO 6656 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T16:53:45.084-03:00  INFO 6656 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
-2024-08-29T16:53:45.209-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T16:53:45.210-03:00  INFO 6656 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T16:53:45.211-03:00  INFO 6656 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T16:53:45.247-03:00  INFO 6656 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T16:53:45.248-03:00  INFO 6656 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 441 ms
-2024-08-29T16:53:45.260-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2024-08-29T16:53:45.263-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:db user=SA
-2024-08-29T16:53:45.264-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2024-08-29T16:53:45.265-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T16:53:45.296-03:00  INFO 6656 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T16:53:45.302-03:00  INFO 6656 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T16:53:45.317-03:00  INFO 6656 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T16:53:45.319-03:00  WARN 6656 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T16:53:45.377-03:00  INFO 6656 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T16:53:45.382-03:00  INFO 6656 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T16:53:45.458-03:00  WARN 6656 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T16:53:45.558-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T16:53:45.568-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T16:53:45.575-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 0.814 seconds (process running for 273.307)
-2024-08-29T16:53:45.578-03:00  INFO 6656 --- [crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-29T16:53:49.073-03:00  INFO 6656 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T16:53:49.073-03:00  INFO 6656 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T16:53:49.075-03:00  INFO 6656 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-08-29T16:55:07.794-03:00  INFO 6656 --- [crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-29T16:55:07.803-03:00  INFO 6656 --- [crud] [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T16:55:07.804-03:00  WARN 6656 --- [crud] [Thread-12] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-08-29T16:55:07.805-03:00  INFO 6656 --- [crud] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2024-08-29T16:55:07.806-03:00  INFO 6656 --- [crud] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2024-08-29T16:55:07.934-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 6656 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T16:55:07.935-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T16:55:08.229-03:00  INFO 6656 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T16:55:08.241-03:00  INFO 6656 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
-2024-08-29T16:55:08.349-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T16:55:08.350-03:00  INFO 6656 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T16:55:08.351-03:00  INFO 6656 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T16:55:08.380-03:00  INFO 6656 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T16:55:08.381-03:00  INFO 6656 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 441 ms
-2024-08-29T16:55:08.393-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2024-08-29T16:55:08.397-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:db user=SA
-2024-08-29T16:55:08.397-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2024-08-29T16:55:08.398-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T16:55:08.427-03:00  INFO 6656 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T16:55:08.431-03:00  INFO 6656 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T16:55:08.444-03:00  INFO 6656 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T16:55:08.446-03:00  WARN 6656 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T16:55:08.494-03:00  INFO 6656 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T16:55:08.499-03:00  INFO 6656 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T16:55:08.570-03:00  WARN 6656 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T16:55:08.642-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T16:55:08.651-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T16:55:08.653-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 0.752 seconds (process running for 356.385)
-2024-08-29T16:55:08.655-03:00  INFO 6656 --- [crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-29T16:55:42.781-03:00  INFO 6656 --- [crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
-2024-08-29T16:55:42.788-03:00  INFO 6656 --- [crud] [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T16:55:42.789-03:00  WARN 6656 --- [crud] [Thread-16] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-08-29T16:55:42.791-03:00  INFO 6656 --- [crud] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2024-08-29T16:55:42.792-03:00  INFO 6656 --- [crud] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
-2024-08-29T16:55:42.913-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 6656 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T16:55:42.914-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T16:55:43.119-03:00  INFO 6656 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T16:55:43.130-03:00  INFO 6656 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
-2024-08-29T16:55:43.218-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T16:55:43.219-03:00  INFO 6656 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T16:55:43.219-03:00  INFO 6656 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T16:55:43.245-03:00  INFO 6656 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T16:55:43.245-03:00  INFO 6656 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 329 ms
-2024-08-29T16:55:43.254-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
-2024-08-29T16:55:43.256-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:db user=SA
-2024-08-29T16:55:43.257-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
-2024-08-29T16:55:43.258-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T16:55:43.280-03:00  INFO 6656 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T16:55:43.285-03:00  INFO 6656 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T16:55:43.301-03:00  INFO 6656 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T16:55:43.303-03:00  WARN 6656 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T16:55:43.374-03:00  INFO 6656 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T16:55:43.379-03:00  INFO 6656 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T16:55:43.437-03:00  WARN 6656 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T16:55:43.494-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T16:55:43.503-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T16:55:43.506-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 0.622 seconds (process running for 391.238)
-2024-08-29T16:55:43.508-03:00  INFO 6656 --- [crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-29T16:55:47.018-03:00  INFO 6656 --- [crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-29T16:55:47.026-03:00  INFO 6656 --- [crud] [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T16:55:47.027-03:00  WARN 6656 --- [crud] [Thread-20] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-08-29T16:55:47.028-03:00  INFO 6656 --- [crud] [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
-2024-08-29T16:55:47.029-03:00  INFO 6656 --- [crud] [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
-2024-08-29T16:55:47.151-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 6656 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T16:55:47.152-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T16:55:47.373-03:00  INFO 6656 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T16:55:47.383-03:00  INFO 6656 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
-2024-08-29T16:55:47.478-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T16:55:47.480-03:00  INFO 6656 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T16:55:47.480-03:00  INFO 6656 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T16:55:47.516-03:00  INFO 6656 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T16:55:47.517-03:00  INFO 6656 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 363 ms
-2024-08-29T16:55:47.529-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
-2024-08-29T16:55:47.532-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:db user=SA
-2024-08-29T16:55:47.533-03:00  INFO 6656 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
-2024-08-29T16:55:47.533-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T16:55:47.557-03:00  INFO 6656 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T16:55:47.562-03:00  INFO 6656 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T16:55:47.578-03:00  INFO 6656 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T16:55:47.580-03:00  WARN 6656 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T16:55:47.629-03:00  INFO 6656 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T16:55:47.633-03:00  INFO 6656 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T16:55:47.700-03:00  WARN 6656 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T16:55:47.767-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T16:55:47.774-03:00  INFO 6656 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T16:55:47.778-03:00  INFO 6656 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 0.656 seconds (process running for 395.509)
-2024-08-29T16:55:47.778-03:00  INFO 6656 --- [crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-29T16:56:04.164-03:00  INFO 6656 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T16:56:04.165-03:00  INFO 6656 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T16:56:04.166-03:00  INFO 6656 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-08-29T17:32:11.154-03:00  INFO 14920 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 14920 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T17:32:11.158-03:00  INFO 14920 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T17:32:11.222-03:00  INFO 14920 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-29T17:32:11.223-03:00  INFO 14920 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-29T17:32:12.164-03:00  INFO 14920 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T17:32:12.280-03:00  INFO 14920 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
-2024-08-29T17:32:13.165-03:00  INFO 14920 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T17:32:13.188-03:00  INFO 14920 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T17:32:13.189-03:00  INFO 14920 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T17:32:13.262-03:00  INFO 14920 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T17:32:13.263-03:00  INFO 14920 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2040 ms
-2024-08-29T17:32:13.309-03:00  INFO 14920 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T17:32:13.610-03:00  INFO 14920 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
-2024-08-29T17:32:13.613-03:00  INFO 14920 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T17:32:13.627-03:00  INFO 14920 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T17:32:13.833-03:00  INFO 14920 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T17:32:13.938-03:00  INFO 14920 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T17:32:14.004-03:00  INFO 14920 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T17:32:14.570-03:00  INFO 14920 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T17:32:14.658-03:00  WARN 14920 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T17:32:15.518-03:00  INFO 14920 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T17:32:15.582-03:00  INFO 14920 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:32:16.081-03:00  WARN 14920 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T17:32:16.245-03:00  WARN 14920 --- [crud] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'clientController' method 
-com.projeto.crud.modules.cliente.controllers.ClientController#getClientByPhone(String)
-to {GET [/client/get-client]}: There is already 'clientController' bean method
-com.projeto.crud.modules.cliente.controllers.ClientController#getClientByCpf(String) mapped.
-2024-08-29T17:32:16.247-03:00  INFO 14920 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:32:16.255-03:00  WARN 14920 --- [crud] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-08-29T17:32:16.256-03:00  INFO 14920 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-29T17:32:16.260-03:00  INFO 14920 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-29T17:32:16.266-03:00  INFO 14920 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-08-29T17:32:16.287-03:00  INFO 14920 --- [crud] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-08-30T10:13:19.670-03:00  INFO 4664 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 4664 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
+2024-08-30T10:13:19.704-03:00  INFO 4664 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T10:13:19.798-03:00  INFO 4664 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-30T10:13:19.799-03:00  INFO 4664 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-30T10:13:20.967-03:00  INFO 4664 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T10:13:21.057-03:00  INFO 4664 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interface.
+2024-08-30T10:13:21.954-03:00  INFO 4664 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-30T10:13:21.974-03:00  INFO 4664 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T10:13:21.974-03:00  INFO 4664 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-30T10:13:22.044-03:00  INFO 4664 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-30T10:13:22.044-03:00  INFO 4664 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2244 ms
+2024-08-30T10:13:22.085-03:00  INFO 4664 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-30T10:13:22.413-03:00  INFO 4664 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
+2024-08-30T10:13:22.416-03:00  INFO 4664 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-30T10:13:22.429-03:00  INFO 4664 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2024-08-30T10:13:22.678-03:00  INFO 4664 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T10:13:22.841-03:00  INFO 4664 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-30T10:13:22.926-03:00  INFO 4664 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-30T10:13:23.483-03:00  INFO 4664 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T10:13:23.573-03:00  WARN 4664 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-30T10:13:24.512-03:00  INFO 4664 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-30T10:13:24.572-03:00  INFO 4664 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T10:13:25.146-03:00  WARN 4664 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T10:13:25.655-03:00  INFO 4664 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T10:13:25.697-03:00  INFO 4664 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-30T10:13:25.709-03:00  INFO 4664 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 6.821 seconds (process running for 7.861)
+2024-08-30T10:14:06.819-03:00  INFO 4664 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30T10:14:06.819-03:00  INFO 4664 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-30T10:14:06.822-03:00  INFO 4664 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-30T13:34:06.862-03:00 ERROR 4664 --- [crud] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Id não pode ser nulo] with root cause
 
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-08-29T17:32:16.326-03:00 ERROR 14920 --- [crud] [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'clientController' method 
-com.projeto.crud.modules.cliente.controllers.ClientController#getClientByPhone(String)
-to {GET [/client/get-client]}: There is already 'clientController' bean method
-com.projeto.crud.modules.cliente.controllers.ClientController#getClientByCpf(String) mapped.
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
-	at com.projeto.crud.CrudApplication.main(CrudApplication.java:10) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
-Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'clientController' method 
-com.projeto.crud.modules.cliente.controllers.ClientController#getClientByPhone(String)
-to {GET [/client/get-client]}: There is already 'clientController' bean method
-com.projeto.crud.modules.cliente.controllers.ClientController#getClientByCpf(String) mapped.
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:674) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:636) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[na:na]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 19 common frames omitted
-
-2024-08-29T17:41:50.223-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 7492 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T17:41:50.227-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T17:41:50.299-03:00  INFO 7492 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-29T17:41:50.300-03:00  INFO 7492 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-29T17:41:51.309-03:00  INFO 7492 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T17:41:51.391-03:00  INFO 7492 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
-2024-08-29T17:41:52.201-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T17:41:52.222-03:00  INFO 7492 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T17:41:52.224-03:00  INFO 7492 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T17:41:52.294-03:00  INFO 7492 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T17:41:52.295-03:00  INFO 7492 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1993 ms
-2024-08-29T17:41:52.344-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T17:41:52.668-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
-2024-08-29T17:41:52.671-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T17:41:52.684-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T17:41:52.887-03:00  INFO 7492 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T17:41:53.008-03:00  INFO 7492 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T17:41:53.084-03:00  INFO 7492 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T17:41:53.595-03:00  INFO 7492 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T17:41:53.689-03:00  WARN 7492 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T17:41:54.562-03:00  INFO 7492 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T17:41:54.628-03:00  INFO 7492 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:41:55.225-03:00  WARN 7492 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T17:41:55.787-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T17:41:55.841-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T17:41:55.856-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 6.391 seconds (process running for 6.996)
-2024-08-29T17:41:59.361-03:00  INFO 7492 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T17:41:59.362-03:00  INFO 7492 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T17:41:59.364-03:00  INFO 7492 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-08-29T17:43:53.774-03:00  WARN 7492 --- [crud] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type UUID is present but converted to null]
-2024-08-29T17:46:06.756-03:00  INFO 7492 --- [crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-29T17:46:06.770-03:00  INFO 7492 --- [crud] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:46:06.775-03:00  WARN 7492 --- [crud] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-08-29T17:46:06.777-03:00  INFO 7492 --- [crud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-29T17:46:06.779-03:00  INFO 7492 --- [crud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-29T17:46:06.936-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 7492 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T17:46:06.938-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T17:46:07.262-03:00  INFO 7492 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T17:46:07.278-03:00  INFO 7492 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
-2024-08-29T17:46:07.436-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T17:46:07.438-03:00  INFO 7492 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T17:46:07.438-03:00  INFO 7492 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T17:46:07.474-03:00  INFO 7492 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T17:46:07.475-03:00  INFO 7492 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 533 ms
-2024-08-29T17:46:07.489-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-08-29T17:46:07.492-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:db user=SA
-2024-08-29T17:46:07.492-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-08-29T17:46:07.493-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T17:46:07.529-03:00  INFO 7492 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T17:46:07.535-03:00  INFO 7492 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T17:46:07.553-03:00  INFO 7492 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T17:46:07.556-03:00  WARN 7492 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T17:46:07.626-03:00  INFO 7492 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T17:46:07.633-03:00  INFO 7492 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:46:07.734-03:00  WARN 7492 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T17:46:07.850-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T17:46:07.864-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T17:46:07.869-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 0.985 seconds (process running for 259.009)
-2024-08-29T17:46:07.872-03:00  INFO 7492 --- [crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-29T17:46:11.339-03:00  INFO 7492 --- [crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-29T17:46:11.348-03:00  INFO 7492 --- [crud] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:46:11.350-03:00  WARN 7492 --- [crud] [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-08-29T17:46:11.352-03:00  INFO 7492 --- [crud] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2024-08-29T17:46:11.354-03:00  INFO 7492 --- [crud] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2024-08-29T17:46:11.499-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 7492 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T17:46:11.500-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T17:46:11.813-03:00  INFO 7492 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T17:46:11.829-03:00  INFO 7492 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
-2024-08-29T17:46:11.972-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T17:46:11.974-03:00  INFO 7492 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T17:46:11.974-03:00  INFO 7492 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T17:46:12.009-03:00  INFO 7492 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T17:46:12.010-03:00  INFO 7492 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 505 ms
-2024-08-29T17:46:12.025-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2024-08-29T17:46:12.028-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:db user=SA
-2024-08-29T17:46:12.029-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2024-08-29T17:46:12.030-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T17:46:12.060-03:00  INFO 7492 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T17:46:12.064-03:00  INFO 7492 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T17:46:12.080-03:00  INFO 7492 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T17:46:12.083-03:00  WARN 7492 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T17:46:12.150-03:00  INFO 7492 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T17:46:12.155-03:00  INFO 7492 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:46:12.250-03:00  WARN 7492 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T17:46:12.362-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T17:46:12.373-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T17:46:12.377-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 0.913 seconds (process running for 263.516)
-2024-08-29T17:46:12.379-03:00  INFO 7492 --- [crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-29T17:51:22.756-03:00  INFO 7492 --- [crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-29T17:51:22.765-03:00  INFO 7492 --- [crud] [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:51:22.767-03:00  WARN 7492 --- [crud] [Thread-12] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-08-29T17:51:22.768-03:00  INFO 7492 --- [crud] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2024-08-29T17:51:22.769-03:00  INFO 7492 --- [crud] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2024-08-29T17:51:22.893-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 7492 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T17:51:22.894-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T17:51:23.186-03:00  INFO 7492 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T17:51:23.198-03:00  INFO 7492 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
-2024-08-29T17:51:23.294-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T17:51:23.295-03:00  INFO 7492 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T17:51:23.296-03:00  INFO 7492 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T17:51:23.340-03:00  INFO 7492 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T17:51:23.341-03:00  INFO 7492 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 442 ms
-2024-08-29T17:51:23.354-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2024-08-29T17:51:23.358-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:db user=SA
-2024-08-29T17:51:23.359-03:00  INFO 7492 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2024-08-29T17:51:23.360-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T17:51:23.392-03:00  INFO 7492 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T17:51:23.398-03:00  INFO 7492 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T17:51:23.417-03:00  INFO 7492 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T17:51:23.423-03:00  WARN 7492 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T17:51:23.505-03:00  INFO 7492 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T17:51:23.518-03:00  INFO 7492 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:51:23.604-03:00  WARN 7492 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T17:51:23.698-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T17:51:23.706-03:00  INFO 7492 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T17:51:23.710-03:00  INFO 7492 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 0.852 seconds (process running for 574.85)
-2024-08-29T17:51:23.711-03:00  INFO 7492 --- [crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-29T17:51:28.889-03:00  INFO 7916 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 7916 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T17:51:28.892-03:00  INFO 7916 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T17:51:28.960-03:00  INFO 7916 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-29T17:51:28.961-03:00  INFO 7916 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-29T17:51:29.976-03:00  INFO 7916 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T17:51:30.053-03:00  INFO 7916 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
-2024-08-29T17:51:30.963-03:00  INFO 7916 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T17:51:30.982-03:00  INFO 7916 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T17:51:30.983-03:00  INFO 7916 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T17:51:31.051-03:00  INFO 7916 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T17:51:31.058-03:00  INFO 7916 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2090 ms
-2024-08-29T17:51:31.113-03:00  INFO 7916 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T17:51:31.422-03:00  INFO 7916 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
-2024-08-29T17:51:31.424-03:00  INFO 7916 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T17:51:31.441-03:00  INFO 7916 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T17:51:31.674-03:00  INFO 7916 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T17:51:31.788-03:00  INFO 7916 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T17:51:31.863-03:00  INFO 7916 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T17:51:32.408-03:00  INFO 7916 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T17:51:32.479-03:00  WARN 7916 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T17:51:33.360-03:00  INFO 7916 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T17:51:33.419-03:00  INFO 7916 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:51:34.023-03:00  WARN 7916 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T17:51:34.552-03:00  INFO 7916 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T17:51:34.625-03:00  INFO 7916 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T17:51:34.650-03:00  INFO 7916 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 6.364 seconds (process running for 6.947)
-2024-08-29T17:52:46.422-03:00  INFO 7916 --- [crud] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T17:52:46.423-03:00  INFO 7916 --- [crud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T17:52:46.426-03:00  INFO 7916 --- [crud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-08-29T17:52:46.479-03:00 ERROR 7916 --- [crud] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Cliente não pode ser nulo] with root cause
-
-java.lang.IllegalArgumentException: Cliente não pode ser nulo
-	at com.projeto.crud.modules.cliente.controllers.ClientController.createClient(ClientController.java:74) ~[classes/:na]
+java.lang.IllegalArgumentException: Id não pode ser nulo
+	at com.projeto.crud.modules.cliente.controllers.ClientController.deleteClient(ClientController.java:108) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
@@ -389,8 +42,8 @@ java.lang.IllegalArgumentException: Cliente não pode ser nulo
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.28.jar:6.0]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
@@ -427,10 +80,10 @@ java.lang.IllegalArgumentException: Cliente não pode ser nulo
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
 	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
 
-2024-08-29T17:53:24.354-03:00 ERROR 7916 --- [crud] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Cliente não pode ser nulo] with root cause
+2024-08-30T13:34:27.216-03:00 ERROR 4664 --- [crud] [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Id não pode ser nulo] with root cause
 
-java.lang.IllegalArgumentException: Cliente não pode ser nulo
-	at com.projeto.crud.modules.cliente.controllers.ClientController.createClient(ClientController.java:74) ~[classes/:na]
+java.lang.IllegalArgumentException: Id não pode ser nulo
+	at com.projeto.crud.modules.cliente.controllers.ClientController.deleteClient(ClientController.java:108) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
@@ -442,8 +95,8 @@ java.lang.IllegalArgumentException: Cliente não pode ser nulo
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.28.jar:6.0]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
@@ -480,256 +133,172 @@ java.lang.IllegalArgumentException: Cliente não pode ser nulo
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
 	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
 
-2024-08-29T17:53:36.676-03:00  INFO 5832 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 5832 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T17:53:36.679-03:00  INFO 5832 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T17:53:36.744-03:00  INFO 5832 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-29T17:53:36.745-03:00  INFO 5832 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-29T17:53:37.745-03:00  INFO 5832 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T17:53:37.823-03:00  INFO 5832 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
-2024-08-29T17:53:38.795-03:00  INFO 5832 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T17:53:38.817-03:00  INFO 5832 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T17:53:38.818-03:00  INFO 5832 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T17:53:38.898-03:00  INFO 5832 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T17:53:38.899-03:00  INFO 5832 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2152 ms
-2024-08-29T17:53:38.948-03:00  INFO 5832 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T17:53:39.240-03:00  INFO 5832 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
-2024-08-29T17:53:39.244-03:00  INFO 5832 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T17:53:39.262-03:00  INFO 5832 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T17:53:39.604-03:00  INFO 5832 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T17:53:39.763-03:00  INFO 5832 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T17:53:39.853-03:00  INFO 5832 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T17:53:40.389-03:00  INFO 5832 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T17:53:40.474-03:00  WARN 5832 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T17:53:41.437-03:00  INFO 5832 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T17:53:41.497-03:00  INFO 5832 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:53:42.045-03:00  WARN 5832 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T17:53:42.541-03:00  INFO 5832 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T17:53:42.588-03:00  INFO 5832 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T17:53:42.604-03:00  INFO 5832 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 6.54 seconds (process running for 7.189)
-2024-08-29T17:53:52.937-03:00  INFO 5832 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T17:53:52.938-03:00  INFO 5832 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T17:53:52.939-03:00  INFO 5832 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-08-29T17:53:52.996-03:00 ERROR 5832 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Cliente não pode ser nulo] with root cause
-
-java.lang.IllegalArgumentException: Cliente não pode ser nulo
-	at com.projeto.crud.modules.cliente.controllers.ClientController.createClient(ClientController.java:74) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
-
-2024-08-29T17:56:11.589-03:00  INFO 5796 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 5796 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T17:56:11.592-03:00  INFO 5796 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T17:56:11.659-03:00  INFO 5796 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-29T17:56:11.660-03:00  INFO 5796 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-29T17:56:12.631-03:00  INFO 5796 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T17:56:12.709-03:00  INFO 5796 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
-2024-08-29T17:56:13.598-03:00  INFO 5796 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T17:56:13.628-03:00  INFO 5796 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T17:56:13.629-03:00  INFO 5796 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T17:56:13.719-03:00  INFO 5796 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T17:56:13.720-03:00  INFO 5796 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2060 ms
-2024-08-29T17:56:13.775-03:00  INFO 5796 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T17:56:14.085-03:00  INFO 5796 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
-2024-08-29T17:56:14.089-03:00  INFO 5796 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T17:56:14.105-03:00  INFO 5796 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T17:56:14.352-03:00  INFO 5796 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T17:56:14.472-03:00  INFO 5796 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T17:56:14.546-03:00  INFO 5796 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T17:56:15.036-03:00  INFO 5796 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T17:56:15.110-03:00  WARN 5796 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T17:56:16.059-03:00  INFO 5796 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T17:56:16.123-03:00  INFO 5796 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T17:56:16.634-03:00  WARN 5796 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T17:56:17.151-03:00  INFO 5796 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T17:56:17.201-03:00  INFO 5796 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T17:56:17.215-03:00  INFO 5796 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 6.236 seconds (process running for 6.814)
-2024-08-29T17:56:20.346-03:00  INFO 5796 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T17:56:20.347-03:00  INFO 5796 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T17:56:20.348-03:00  INFO 5796 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-08-29T18:14:41.247-03:00  INFO 9132 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 9132 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T18:14:41.251-03:00  INFO 9132 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T18:14:41.317-03:00  INFO 9132 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-29T18:14:41.318-03:00  INFO 9132 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-29T18:14:42.403-03:00  INFO 9132 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T18:14:42.498-03:00  INFO 9132 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
-2024-08-29T18:14:43.398-03:00  INFO 9132 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T18:14:43.419-03:00  INFO 9132 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T18:14:43.420-03:00  INFO 9132 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T18:14:43.495-03:00  INFO 9132 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T18:14:43.496-03:00  INFO 9132 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2177 ms
-2024-08-29T18:14:43.548-03:00  INFO 9132 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T18:14:43.924-03:00  INFO 9132 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
-2024-08-29T18:14:43.927-03:00  INFO 9132 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T18:14:43.946-03:00  INFO 9132 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T18:14:44.286-03:00  INFO 9132 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T18:14:44.411-03:00  INFO 9132 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T18:14:44.480-03:00  INFO 9132 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T18:14:45.090-03:00  INFO 9132 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T18:14:45.166-03:00  WARN 9132 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T18:14:46.163-03:00  INFO 9132 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T18:14:46.229-03:00  INFO 9132 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T18:14:46.780-03:00  WARN 9132 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T18:14:47.329-03:00  INFO 9132 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T18:14:47.405-03:00  INFO 9132 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T18:14:47.466-03:00  INFO 9132 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 7.007 seconds (process running for 7.666)
-2024-08-29T18:15:05.019-03:00  INFO 9132 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T18:15:05.020-03:00  INFO 9132 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T18:15:05.022-03:00  INFO 9132 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-08-29T18:18:42.980-03:00  INFO 9132 --- [crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-29T18:18:42.996-03:00  INFO 9132 --- [crud] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T18:18:43.002-03:00  WARN 9132 --- [crud] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-08-29T18:18:43.004-03:00  INFO 9132 --- [crud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-29T18:18:43.007-03:00  INFO 9132 --- [crud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-29T18:18:43.179-03:00  INFO 9132 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 9132 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T18:18:43.180-03:00  INFO 9132 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T18:18:43.520-03:00  INFO 9132 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T18:18:43.537-03:00  INFO 9132 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
-2024-08-29T18:18:43.710-03:00  INFO 9132 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T18:18:43.712-03:00  INFO 9132 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T18:18:43.714-03:00  INFO 9132 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T18:18:43.750-03:00  INFO 9132 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T18:18:43.751-03:00  INFO 9132 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 567 ms
-2024-08-29T18:18:43.767-03:00  INFO 9132 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-08-29T18:18:43.770-03:00  INFO 9132 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:db user=SA
-2024-08-29T18:18:43.771-03:00  INFO 9132 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-08-29T18:18:43.772-03:00  INFO 9132 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T18:18:43.809-03:00  INFO 9132 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T18:18:43.815-03:00  INFO 9132 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T18:18:43.833-03:00  INFO 9132 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T18:18:43.836-03:00  WARN 9132 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T18:18:43.904-03:00  INFO 9132 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T18:18:43.909-03:00  INFO 9132 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T18:18:44.001-03:00  WARN 9132 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T18:18:44.121-03:00  INFO 9132 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T18:18:44.134-03:00  INFO 9132 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T18:18:44.137-03:00  INFO 9132 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 1.005 seconds (process running for 244.337)
-2024-08-29T18:18:44.140-03:00  INFO 9132 --- [crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-29T18:18:49.441-03:00  INFO 9132 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T18:18:49.441-03:00  INFO 9132 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T18:18:49.442-03:00  INFO 9132 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-08-29T18:19:39.376-03:00  INFO 12404 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 12404 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T18:19:39.380-03:00  INFO 12404 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T18:19:39.446-03:00  INFO 12404 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-29T18:19:39.447-03:00  INFO 12404 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-29T18:19:40.458-03:00  INFO 12404 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T18:19:40.537-03:00  INFO 12404 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
-2024-08-29T18:19:41.368-03:00  INFO 12404 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T18:19:41.390-03:00  INFO 12404 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T18:19:41.391-03:00  INFO 12404 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T18:19:41.468-03:00  INFO 12404 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T18:19:41.469-03:00  INFO 12404 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2021 ms
-2024-08-29T18:19:41.520-03:00  INFO 12404 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T18:19:41.833-03:00  INFO 12404 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
-2024-08-29T18:19:41.837-03:00  INFO 12404 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T18:19:41.855-03:00  INFO 12404 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T18:19:42.109-03:00  INFO 12404 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T18:19:42.219-03:00  INFO 12404 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T18:19:42.284-03:00  INFO 12404 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T18:19:42.782-03:00  INFO 12404 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T18:19:42.868-03:00  WARN 12404 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T18:19:43.746-03:00  INFO 12404 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T18:19:43.810-03:00  INFO 12404 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T18:19:44.359-03:00  WARN 12404 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T18:19:44.891-03:00  INFO 12404 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T18:19:44.941-03:00  INFO 12404 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T18:19:44.954-03:00  INFO 12404 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 6.3 seconds (process running for 7.107)
-2024-08-29T18:19:47.567-03:00  INFO 12404 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T18:19:47.568-03:00  INFO 12404 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T18:19:47.571-03:00  INFO 12404 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-08-29T18:20:47.746-03:00  INFO 12404 --- [crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-29T18:20:47.761-03:00  INFO 12404 --- [crud] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T18:20:47.767-03:00  WARN 12404 --- [crud] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-08-29T18:20:47.769-03:00  INFO 12404 --- [crud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-29T18:20:47.771-03:00  INFO 12404 --- [crud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-29T18:20:47.956-03:00  INFO 12404 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 12404 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T18:20:47.958-03:00  INFO 12404 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T18:20:48.433-03:00  INFO 12404 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T18:20:48.451-03:00  INFO 12404 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
-2024-08-29T18:20:48.596-03:00  INFO 12404 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T18:20:48.598-03:00  INFO 12404 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-29T18:20:48.600-03:00  INFO 12404 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-29T18:20:48.647-03:00  INFO 12404 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-29T18:20:48.648-03:00  INFO 12404 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 684 ms
-2024-08-29T18:20:48.682-03:00  INFO 12404 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-08-29T18:20:48.697-03:00  INFO 12404 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:db user=SA
-2024-08-29T18:20:48.699-03:00  INFO 12404 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-08-29T18:20:48.700-03:00  INFO 12404 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T18:20:48.755-03:00  INFO 12404 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T18:20:48.765-03:00  INFO 12404 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T18:20:48.790-03:00  INFO 12404 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T18:20:48.793-03:00  WARN 12404 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T18:20:48.885-03:00  INFO 12404 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T18:20:48.890-03:00  INFO 12404 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T18:20:49.082-03:00  WARN 12404 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-29T18:20:49.258-03:00  INFO 12404 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-29T18:20:49.283-03:00  INFO 12404 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-29T18:20:49.290-03:00  INFO 12404 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 1.403 seconds (process running for 71.442)
-2024-08-29T18:20:49.295-03:00  INFO 12404 --- [crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-29T18:20:52.151-03:00  INFO 12404 --- [crud] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-29T18:20:52.161-03:00  INFO 12404 --- [crud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-29T18:20:52.163-03:00  INFO 12404 --- [crud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-08-29T18:22:05.915-03:00  INFO 10572 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 10572 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
-2024-08-29T18:22:05.919-03:00  INFO 10572 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
-2024-08-29T18:22:05.992-03:00  INFO 10572 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-29T18:22:05.993-03:00  INFO 10572 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-29T18:22:07.216-03:00  INFO 10572 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-29T18:22:07.303-03:00  INFO 10572 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
-2024-08-29T18:22:08.258-03:00  INFO 10572 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-29T18:22:08.367-03:00  INFO 10572 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2373 ms
-2024-08-29T18:22:08.413-03:00  INFO 10572 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-29T18:22:08.680-03:00  INFO 10572 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
-2024-08-29T18:22:08.684-03:00  INFO 10572 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-29T18:22:08.697-03:00  INFO 10572 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
-2024-08-29T18:22:08.942-03:00  INFO 10572 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-29T18:22:09.051-03:00  INFO 10572 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-29T18:22:09.118-03:00  INFO 10572 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-29T18:22:09.594-03:00  INFO 10572 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-29T18:22:09.727-03:00  WARN 10572 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-29T18:22:10.766-03:00  INFO 10572 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-29T18:22:10.847-03:00  INFO 10572 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-29T18:22:11.483-03:00  WARN 10572 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T13:35:10.441-03:00  INFO 4664 --- [crud] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T13:35:10.451-03:00  WARN 4664 --- [crud] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-08-30T13:35:10.452-03:00  INFO 4664 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-30T13:35:10.455-03:00  INFO 4664 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-30T13:35:16.328-03:00  INFO 6008 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 6008 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
+2024-08-30T13:35:16.333-03:00  INFO 6008 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T13:35:16.426-03:00  INFO 6008 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-30T13:35:16.427-03:00  INFO 6008 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-30T13:35:17.683-03:00  INFO 6008 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T13:35:17.764-03:00  INFO 6008 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-08-30T13:35:18.632-03:00  INFO 6008 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-30T13:35:18.651-03:00  INFO 6008 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T13:35:18.652-03:00  INFO 6008 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-30T13:35:18.712-03:00  INFO 6008 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-30T13:35:18.712-03:00  INFO 6008 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2284 ms
+2024-08-30T13:35:18.754-03:00  INFO 6008 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-30T13:35:19.078-03:00  INFO 6008 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
+2024-08-30T13:35:19.080-03:00  INFO 6008 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-30T13:35:19.096-03:00  INFO 6008 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2024-08-30T13:35:19.393-03:00  INFO 6008 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T13:35:19.502-03:00  INFO 6008 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-30T13:35:19.558-03:00  INFO 6008 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-30T13:35:20.035-03:00  INFO 6008 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T13:35:20.102-03:00  WARN 6008 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-30T13:35:21.036-03:00  INFO 6008 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-30T13:35:21.093-03:00  INFO 6008 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T13:35:21.662-03:00  WARN 6008 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T13:35:22.207-03:00  INFO 6008 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T13:35:22.254-03:00  INFO 6008 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-30T13:35:22.266-03:00  INFO 6008 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 6.735 seconds (process running for 7.569)
+2024-08-30T13:35:39.947-03:00  INFO 6008 --- [crud] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30T13:35:39.947-03:00  INFO 6008 --- [crud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-30T13:35:39.948-03:00  INFO 6008 --- [crud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-30T14:15:16.028-03:00  INFO 6008 --- [crud] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T14:15:16.033-03:00  WARN 6008 --- [crud] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-08-30T14:15:16.034-03:00  INFO 6008 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-30T14:15:16.035-03:00  INFO 6008 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-30T14:15:22.262-03:00  INFO 14892 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 14892 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
+2024-08-30T14:15:22.266-03:00  INFO 14892 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T14:15:22.368-03:00  INFO 14892 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-30T14:15:22.369-03:00  INFO 14892 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-30T14:15:23.981-03:00  INFO 14892 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T14:15:24.070-03:00  INFO 14892 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2024-08-30T14:15:25.030-03:00  INFO 14892 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-30T14:15:25.052-03:00  INFO 14892 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T14:15:25.053-03:00  INFO 14892 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-30T14:15:25.122-03:00  INFO 14892 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-30T14:15:25.123-03:00  INFO 14892 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2753 ms
+2024-08-30T14:15:25.164-03:00  INFO 14892 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-30T14:15:25.503-03:00  INFO 14892 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
+2024-08-30T14:15:25.506-03:00  INFO 14892 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-30T14:15:25.521-03:00  INFO 14892 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2024-08-30T14:15:25.779-03:00  INFO 14892 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T14:15:25.878-03:00  INFO 14892 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-30T14:15:25.944-03:00  INFO 14892 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-30T14:15:26.525-03:00  INFO 14892 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T14:15:26.594-03:00  WARN 14892 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-30T14:15:27.569-03:00  INFO 14892 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-30T14:15:27.627-03:00  INFO 14892 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T14:15:28.293-03:00  WARN 14892 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T14:15:28.904-03:00  INFO 14892 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T14:15:28.964-03:00  INFO 14892 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-30T14:15:28.980-03:00  INFO 14892 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 7.634 seconds (process running for 8.53)
+2024-08-30T14:24:48.217-03:00  INFO 14892 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30T14:24:48.218-03:00  INFO 14892 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-30T14:24:48.220-03:00  INFO 14892 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-30T15:04:05.831-03:00  INFO 14892 --- [crud] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T15:04:05.856-03:00  WARN 14892 --- [crud] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-08-30T15:04:05.858-03:00  INFO 14892 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-30T15:04:05.863-03:00  INFO 14892 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-30T15:16:21.906-03:00  INFO 380 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 380 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
+2024-08-30T15:16:21.909-03:00  INFO 380 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T15:16:21.982-03:00  INFO 380 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-30T15:16:21.982-03:00  INFO 380 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-30T15:16:23.145-03:00  INFO 380 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T15:16:23.250-03:00  INFO 380 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2024-08-30T15:16:24.283-03:00  INFO 380 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-30T15:16:24.306-03:00  INFO 380 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T15:16:24.307-03:00  INFO 380 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-30T15:16:24.378-03:00  INFO 380 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-30T15:16:24.378-03:00  INFO 380 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2395 ms
+2024-08-30T15:16:24.425-03:00  INFO 380 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-30T15:16:24.753-03:00  INFO 380 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
+2024-08-30T15:16:24.756-03:00  INFO 380 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-30T15:16:24.774-03:00  INFO 380 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2024-08-30T15:16:25.091-03:00  INFO 380 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T15:16:25.216-03:00  INFO 380 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-30T15:16:25.289-03:00  INFO 380 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-30T15:16:25.878-03:00  INFO 380 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T15:16:25.965-03:00  WARN 380 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-30T15:16:27.109-03:00  INFO 380 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-30T15:16:27.181-03:00  INFO 380 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T15:16:27.807-03:00  WARN 380 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T15:16:28.502-03:00  INFO 380 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T15:16:28.558-03:00  INFO 380 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-30T15:16:28.575-03:00  INFO 380 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 7.389 seconds (process running for 8.19)
+2024-08-30T15:16:29.465-03:00  INFO 380 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30T15:16:29.466-03:00  INFO 380 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-30T15:16:29.467-03:00  INFO 380 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-30T15:16:37.533-03:00  INFO 380 --- [crud] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T15:16:37.542-03:00  WARN 380 --- [crud] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-08-30T15:16:37.543-03:00  INFO 380 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-30T15:16:37.546-03:00  INFO 380 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-30T15:17:18.636-03:00  INFO 4144 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 4144 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
+2024-08-30T15:17:18.639-03:00  INFO 4144 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T15:17:18.712-03:00  INFO 4144 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-30T15:17:18.713-03:00  INFO 4144 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-30T15:17:19.919-03:00  INFO 4144 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T15:17:20.012-03:00  INFO 4144 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+2024-08-30T15:17:20.889-03:00  INFO 4144 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-30T15:17:20.908-03:00  INFO 4144 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T15:17:20.908-03:00  INFO 4144 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-30T15:17:20.968-03:00  INFO 4144 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-30T15:17:20.969-03:00  INFO 4144 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2256 ms
+2024-08-30T15:17:21.013-03:00  INFO 4144 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-30T15:17:21.328-03:00  INFO 4144 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
+2024-08-30T15:17:21.331-03:00  INFO 4144 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-30T15:17:21.347-03:00  INFO 4144 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2024-08-30T15:17:21.587-03:00  INFO 4144 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T15:17:21.709-03:00  INFO 4144 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-30T15:17:21.771-03:00  INFO 4144 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-30T15:17:22.424-03:00  INFO 4144 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T15:17:22.523-03:00  WARN 4144 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-30T15:17:23.651-03:00  INFO 4144 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-30T15:17:23.707-03:00  INFO 4144 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T15:17:24.268-03:00  WARN 4144 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T15:17:24.747-03:00  INFO 4144 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T15:17:24.792-03:00  INFO 4144 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-30T15:17:24.804-03:00  INFO 4144 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 7.172 seconds (process running for 7.942)
+2024-08-30T15:17:25.042-03:00  INFO 4144 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30T15:17:25.042-03:00  INFO 4144 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-30T15:17:25.043-03:00  INFO 4144 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-30T15:17:31.075-03:00  INFO 4144 --- [crud] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T15:17:31.087-03:00  WARN 4144 --- [crud] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-08-30T15:17:31.088-03:00  INFO 4144 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-30T15:17:31.092-03:00  INFO 4144 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-30T18:24:48.719-03:00  INFO 11728 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Starting CrudApplication using Java 22.0.1 with PID 11728 (C:\Users\guili\Desktop\git\crud\target\classes started by guili in C:\Users\guili\Desktop\git\crud)
+2024-08-30T18:24:48.729-03:00  INFO 11728 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T18:24:48.813-03:00  INFO 11728 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-30T18:24:48.814-03:00  INFO 11728 --- [crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-30T18:24:50.024-03:00  INFO 11728 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T18:24:50.122-03:00  INFO 11728 --- [crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2024-08-30T18:24:51.121-03:00  INFO 11728 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-30T18:24:51.151-03:00  INFO 11728 --- [crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T18:24:51.152-03:00  INFO 11728 --- [crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-30T18:24:51.234-03:00  INFO 11728 --- [crud] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-30T18:24:51.235-03:00  INFO 11728 --- [crud] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2419 ms
+2024-08-30T18:24:51.278-03:00  INFO 11728 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-30T18:24:51.636-03:00  INFO 11728 --- [crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
+2024-08-30T18:24:51.638-03:00  INFO 11728 --- [crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-30T18:24:51.653-03:00  INFO 11728 --- [crud] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2024-08-30T18:24:51.922-03:00  INFO 11728 --- [crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T18:24:52.073-03:00  INFO 11728 --- [crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-30T18:24:52.159-03:00  INFO 11728 --- [crud] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-30T18:24:52.814-03:00  INFO 11728 --- [crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T18:24:52.899-03:00  WARN 11728 --- [crud] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-30T18:24:53.896-03:00  INFO 11728 --- [crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-30T18:24:53.968-03:00  INFO 11728 --- [crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T18:24:54.604-03:00  WARN 11728 --- [crud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T18:24:55.165-03:00  INFO 11728 --- [crud] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T18:24:55.214-03:00  INFO 11728 --- [crud] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-30T18:24:55.227-03:00  INFO 11728 --- [crud] [restartedMain] com.projeto.crud.CrudApplication         : Started CrudApplication in 7.527 seconds (process running for 8.625)
+2024-08-30T18:29:17.212-03:00  INFO 11728 --- [crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30T18:29:17.213-03:00  INFO 11728 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-30T18:29:17.217-03:00  INFO 11728 --- [crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-30T19:06:40.961-03:00  INFO 11728 --- [crud] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T19:06:40.984-03:00  WARN 11728 --- [crud] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-08-30T19:06:40.988-03:00  INFO 11728 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-30T19:06:41.001-03:00  INFO 11728 --- [crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

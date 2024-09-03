@@ -1,5 +1,6 @@
 package com.projeto.crud.modules.cliente.services;
 
+import java.util.List;
 import java.util.UUID;
 import java.util.Optional;
 
@@ -16,6 +17,10 @@ public class ReadClientService {
 
     @Autowired
     private ClientRepository clientRepository;
+
+    public List<ClientDTO> getAllClients(){
+        return ClientMapper.toDTOList(clientRepository.findAll());
+    }
 
     public ClientDTO getClientById(UUID id) {
         return toClientDTO(clientRepository.findById(id));

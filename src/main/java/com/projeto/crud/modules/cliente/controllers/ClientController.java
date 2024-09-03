@@ -11,6 +11,7 @@ import com.projeto.crud.modules.cliente.services.DeleteClientService;
 import com.projeto.crud.modules.cliente.services.ReadClientService;
 import com.projeto.crud.modules.cliente.services.UpdateClientService;
 
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,16 @@ public class ClientController {
 
     @Autowired
     private UpdateClientService updateClientService;
+
+    @GetMapping("/get-all")
+    public ResponseEntity<Object> getAllClients(){
+        try {
+            List<ClientDTO> dtoList = readClientService.getAllClients();
+            return new ResponseEntity<>(dtoList, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
 
     @GetMapping("/get-by")
     public ResponseEntity<Object> getClient(
@@ -104,7 +115,7 @@ public class ClientController {
 
     @DeleteMapping("/delete")
     public ResponseEntity<Object> deleteClient(@RequestParam(required = false) UUID id) {
-        if (id != null) {
+        if (id == null) {
             throw new IllegalArgumentException("Id não pode ser nulo");
         } else {
             try {

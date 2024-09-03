@@ -2,6 +2,9 @@ package com.projeto.crud.modules.cliente;
 
 import com.projeto.crud.modules.cliente.dto.ClientDTO;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class ClientMapper {
 
     public static Client toEntity(ClientDTO dto) {
@@ -24,5 +27,9 @@ public class ClientMapper {
                 .cpf(cliente.getCpf())
                 .phone(cliente.getPhone())
                 .build();
+    }
+
+    public static List<ClientDTO> toDTOList(List<Client> clients){
+        return clients.stream().map(ClientMapper::toDTO).collect(Collectors.toList());
     }
 }

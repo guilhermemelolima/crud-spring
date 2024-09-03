@@ -63,7 +63,7 @@ public class ClientController {
             } else if (phone != null) {
                 dto = readClientService.getClientByPhone(phone);
             } else {
-                throw new IllegalArgumentException("Informe ao menos um parâmetro.");
+                return new ResponseEntity<>("Informe ao menos um parâmetro.", HttpStatus.BAD_REQUEST);
             }
             return new ResponseEntity<>(dto, HttpStatus.OK);
         } catch (Exception e) {
@@ -74,7 +74,7 @@ public class ClientController {
     @GetMapping("/get")
     public ResponseEntity<Object> getClientById(@RequestParam(required = false) UUID id) {
         if (id == null) {
-            throw new IllegalArgumentException("Id não pode ser nulo.");
+            return new ResponseEntity<>("Id não pode ser nulo.", HttpStatus.BAD_REQUEST);
         } else {
             try {
                 ClientDTO dto = readClientService.getClientById(id);
@@ -88,7 +88,7 @@ public class ClientController {
     @PutMapping("/update")
     public ResponseEntity<Object> updateClient(@RequestBody Client client) {
         if (client == null) {
-            throw new IllegalArgumentException("Cliente não pode ser nulo");
+            return new ResponseEntity<>("O cliente não pode ser nulo", HttpStatus.BAD_REQUEST);
         } else {
             try {
                 ClientDTO dto = updateClientService.updateCliente(client);
@@ -102,7 +102,7 @@ public class ClientController {
     @PostMapping("/create")
     public ResponseEntity<Object> createClient(@RequestBody(required = false) Client client) {
         if (client == null) {
-            throw new IllegalArgumentException("Cliente não pode ser nulo");
+            return new ResponseEntity<>("Cliente não pode ser nulo.", HttpStatus.BAD_REQUEST);
         } else {
             try {
                 ClientDTO dto = createClientService.createCliente(client);
@@ -116,7 +116,7 @@ public class ClientController {
     @DeleteMapping("/delete")
     public ResponseEntity<Object> deleteClient(@RequestParam(required = false) UUID id) {
         if (id == null) {
-            throw new IllegalArgumentException("Id não pode ser nulo");
+            return new ResponseEntity<>("Id não pode ser nulo.", HttpStatus.BAD_REQUEST);
         } else {
             try {
                 deleteClientService.deleteClient(id);

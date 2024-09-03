@@ -15,19 +15,21 @@ public class CreateClientService {
     private ClientRepository clientRepository;
 
     public ClientDTO createCliente(Client client) {
-
+        System.out.println(client.getEmail());
         clientRepository
                 .findByEmail(client.getEmail())
                 .ifPresent(existing -> {
                     throw new RuntimeException("Email já está cadastrado.");
                 });
 
+        System.out.println(client.getPhone());
         clientRepository
                 .findByPhone(client.getPhone())
                 .ifPresent(existing -> {
                     throw new RuntimeException("Telefone já cadastrado.");
                 });
 
+        System.out.println(client.getCpf());
         clientRepository
                 .findByCpf(client.getCpf())
                 .ifPresent(existing -> {
